@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>لعبة كثير وقليل</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ▬▬▬ واجهة رئيسية ▬▬▬ -->
+<div id="mainScreen" class="screen active">
+    <h1 class="title">لعبة كثير وقليل</h1>
+    <button id="startBtn" class="big-btn">ابدأ اللعب</button>
+</div>
+
+<!-- ▬▬▬ شاشة اللعبة ▬▬▬ -->
+<div id="gameScreen" class="screen">
+    <div id="roundText" class="round-title"></div>
+
+    <div class="container">
+        <div id="groupFew" class="group"></div>
+        <div id="groupMany" class="group"></div>
+    </div>
+
+    <audio id="correctSound" src="https://www.soundjay.com/human/sounds/applause-8.mp3"></audio>
+</div>
+
+<!-- ▬▬▬ شاشة النتائج ▬▬▬ -->
+<div id="resultScreen" class="screen">
+    <div id="resultMessage" class="result-msg"></div>
+    <button id="retryBtn" class="big-btn">إعادة المحاولة</button>
+    <br><br>
+    <button id="endBtn" class="big-btn">إنهاء</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
